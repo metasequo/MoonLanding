@@ -67,12 +67,18 @@ namespace MoonLanding
             {
                 //計算
                 Acceleration = Constants.Gravity;
-                if (Use) Acceleration += (double)UsePropellant.Value;
-                Velocity = Convert.ToDouble(NowVelocity.Text)*-1 + Acceleration;
+                if (Use)
+                {
+                    Acceleration += (double)UsePropellant.Value;
+                }
+                Velocity = Convert.ToDouble(NowVelocity.Text) * -1 + Acceleration;
                 Altitude = Convert.ToDouble(NowAltitude.Text) + Velocity;
 
                 //テキストボックスに表示
-                if (Use) Propellant -= (int)UsePropellant.Value;
+                if (Use)
+                {
+                    Propellant -= (int)UsePropellant.Value;
+                }
                 NowAltitude.Text = Altitude.ToString();
                 NowVelocity.Text = (-Velocity).ToString();
                 RemainingPropellant.Text = Propellant.ToString();
@@ -87,7 +93,8 @@ namespace MoonLanding
 
         //着陸判定
         private void Landing(){
-            if (-1.0 <= Acceleration && Acceleration <= 1.0 && 0.0 <= Altitude && Altitude <= 1.0)
+            if ((-1.0 <= Acceleration && Acceleration <= 1.0)
+                && (0.0 <= Altitude && Altitude <= 1.0))
             {
                 MessageBox.Show("おめでとうございます！着陸に成功しました！！", "着陸成功",
                     MessageBoxButtons.OK);
