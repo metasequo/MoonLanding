@@ -1,0 +1,18 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch develop
+# Your branch is up-to-date with 'origin/develop'.
+#
+# Changes to be committed:
+#	new file:   MoonLanding/Lander.cs
+#	renamed:    "MoonLanding/\343\203\255\343\202\261\343\203\203\343\203\210.ico" -> MoonLanding/Lander.ico
+#	modified:   MoonLanding/MoonLanding.Designer.cs
+#	modified:   MoonLanding/MoonLanding.cs
+#	modified:   MoonLanding/MoonLanding.csproj
+#	modified:   MoonLanding/Program.cs
+#	deleted:    MoonLanding/Rocket1.cs
+#
+
+3. 着陸船をクラス化
+以上を実装。

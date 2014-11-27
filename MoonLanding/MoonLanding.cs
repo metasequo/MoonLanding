@@ -24,20 +24,20 @@ namespace MoonLanding
         }
 
         bool Start = false;     //スタートボタンを推したかどうかのフラグ
-        double Altitude, Velocity, Acceleration;    //ロケットの高度、速度、加速度
-        int Propellant;     //推進剤の数
+
+        Lander Lander = new Lander();
 
         //初期化
         private void Format()
         {
             Start = false;
-            Altitude = (int)InitialAltitude.Value;
-            Velocity = 0;
-            Acceleration = 0;
-            Propellant = 300;
-            NowAltitude.Text = Altitude.ToString();
-            NowVelocity.Text = Velocity.ToString();
-            RemainingPropellant.Text = Propellant.ToString();
+            Lander.Altitude = (int)InitialAltitude.Value;
+            Lander.Velocity = 0;
+            Lander.Acceleration = 0;
+            Lander.Propellant = 300;
+            NowAltitude.Text = Lander.Altitude.ToString();
+            NowVelocity.Text = Lander.Velocity.ToString();
+            RemainingPropellant.Text = Lander.Propellant.ToString();
         }
 
         //スタートフラグをチェック、その後計算
@@ -58,7 +58,7 @@ namespace MoonLanding
         private void Calc(bool Use)
         {
             //推進剤が足りない時はメッセージを出す
-            if (Use && Propellant < UsePropellant.Value)
+            if (Use && Lander.Propellant < UsePropellant.Value)
             {
                 MessageBox.Show("推進剤が足りません。", "推進剤不足",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -66,25 +66,25 @@ namespace MoonLanding
             else
             {
                 //計算
-                Acceleration = Constants.Gravity;
+                Lander.Acceleration = Constants.Gravity;
                 if (Use)
                 {
-                    Acceleration += (double)UsePropellant.Value;
+                    Lander.Acceleration += (double)UsePropellant.Value;
                 }
-                Velocity = Convert.ToDouble(NowVelocity.Text) * -1 + Acceleration;
-                Altitude = Convert.ToDouble(NowAltitude.Text) + Velocity;
+                Lander.Velocity = Convert.ToDouble(NowVelocity.Text) * -1 + Lander.Acceleration;
+                Lander.Altitude = Convert.ToDouble(NowAltitude.Text) + Lander.Velocity;
 
                 //テキストボックスに表示
                 if (Use)
                 {
-                    Propellant -= (int)UsePropellant.Value;
+                    Lander.Propellant -= (int)UsePropellant.Value;
                 }
-                NowAltitude.Text = Altitude.ToString();
-                NowVelocity.Text = (-Velocity).ToString();
-                RemainingPropellant.Text = Propellant.ToString();
+                NowAltitude.Text = Lander.Altitude.ToString();
+                NowVelocity.Text = (-Lander.Velocity).ToString();
+                RemainingPropellant.Text = Lander.Propellant.ToString();
 
                 //高度が1.0m以下になったら着陸判定する
-                if (Altitude <= 1.0)
+                if (Lander.Altitude <= 1.0)
                 {
                     Landing();
                 }
@@ -93,8 +93,8 @@ namespace MoonLanding
 
         //着陸判定
         private void Landing(){
-            if ((-1.0 <= Acceleration && Acceleration <= 1.0)
-                && (0.0 <= Altitude && Altitude <= 1.0))
+            if ((-1.0 <= Lander.Velocity && Lander.Velocity <= 1.0)
+                && (0.0 <= Lander.Altitude && Lander.Altitude <= 1.0))
             {
                 MessageBox.Show("おめでとうございます！着陸に成功しました！！", "着陸成功",
                     MessageBoxButtons.OK);

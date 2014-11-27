@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MoonLanding));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.初期高度 = new System.Windows.Forms.Label();
+            this.噴射推進剤 = new System.Windows.Forms.Label();
+            this.現在高度 = new System.Windows.Forms.Label();
+            this.現在落下速度 = new System.Windows.Forms.Label();
+            this.残推進剤 = new System.Windows.Forms.Label();
             this.InitialAltitude = new System.Windows.Forms.NumericUpDown();
             this.UsePropellant = new System.Windows.Forms.NumericUpDown();
             this.NowAltitude = new System.Windows.Forms.TextBox();
             this.NowVelocity = new System.Windows.Forms.TextBox();
             this.RemainingPropellant = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.初期高度m = new System.Windows.Forms.Label();
+            this.使用推進剤単位 = new System.Windows.Forms.Label();
+            this.現在高度m = new System.Windows.Forms.Label();
+            this.現在落下速度ms = new System.Windows.Forms.Label();
+            this.残推進剤単位 = new System.Windows.Forms.Label();
             this.StartButton = new System.Windows.Forms.Button();
             this.InjectionButton = new System.Windows.Forms.Button();
             this.NonInjectionButton = new System.Windows.Forms.Button();
@@ -52,50 +52,50 @@
             ((System.ComponentModel.ISupportInitialize)(this.UsePropellant)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // 初期高度
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "初期高度";
+            this.初期高度.AutoSize = true;
+            this.初期高度.Location = new System.Drawing.Point(27, 25);
+            this.初期高度.Name = "初期高度";
+            this.初期高度.Size = new System.Drawing.Size(53, 12);
+            this.初期高度.TabIndex = 0;
+            this.初期高度.Text = "初期高度";
             // 
-            // label2
+            // 噴射推進剤
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "噴射推進剤";
+            this.噴射推進剤.AutoSize = true;
+            this.噴射推進剤.Location = new System.Drawing.Point(21, 84);
+            this.噴射推進剤.Name = "噴射推進剤";
+            this.噴射推進剤.Size = new System.Drawing.Size(65, 12);
+            this.噴射推進剤.TabIndex = 1;
+            this.噴射推進剤.Text = "噴射推進剤";
             // 
-            // label3
+            // 現在高度
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 172);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "現在高度";
+            this.現在高度.AutoSize = true;
+            this.現在高度.Location = new System.Drawing.Point(27, 172);
+            this.現在高度.Name = "現在高度";
+            this.現在高度.Size = new System.Drawing.Size(53, 12);
+            this.現在高度.TabIndex = 2;
+            this.現在高度.Text = "現在高度";
             // 
-            // label4
+            // 現在落下速度
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 201);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 12);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "現在落下速度";
+            this.現在落下速度.AutoSize = true;
+            this.現在落下速度.Location = new System.Drawing.Point(15, 201);
+            this.現在落下速度.Name = "現在落下速度";
+            this.現在落下速度.Size = new System.Drawing.Size(77, 12);
+            this.現在落下速度.TabIndex = 3;
+            this.現在落下速度.Text = "現在落下速度";
             // 
-            // label5
+            // 残推進剤
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 230);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "残推進剤";
+            this.残推進剤.AutoSize = true;
+            this.残推進剤.Location = new System.Drawing.Point(27, 230);
+            this.残推進剤.Name = "残推進剤";
+            this.残推進剤.Size = new System.Drawing.Size(53, 12);
+            this.残推進剤.TabIndex = 4;
+            this.残推進剤.Text = "残推進剤";
             // 
             // InitialAltitude
             // 
@@ -165,50 +165,50 @@
             this.RemainingPropellant.Size = new System.Drawing.Size(65, 19);
             this.RemainingPropellant.TabIndex = 9;
             // 
-            // label6
+            // 初期高度m
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(177, 25);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(14, 12);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "m";
+            this.初期高度m.AutoSize = true;
+            this.初期高度m.Location = new System.Drawing.Point(177, 25);
+            this.初期高度m.Name = "初期高度m";
+            this.初期高度m.Size = new System.Drawing.Size(14, 12);
+            this.初期高度m.TabIndex = 10;
+            this.初期高度m.Text = "m";
             // 
-            // label7
+            // 使用推進剤単位
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(177, 84);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 12);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "単位";
+            this.使用推進剤単位.AutoSize = true;
+            this.使用推進剤単位.Location = new System.Drawing.Point(177, 84);
+            this.使用推進剤単位.Name = "使用推進剤単位";
+            this.使用推進剤単位.Size = new System.Drawing.Size(29, 12);
+            this.使用推進剤単位.TabIndex = 11;
+            this.使用推進剤単位.Text = "単位";
             // 
-            // label8
+            // 現在高度m
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(177, 172);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(14, 12);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "m";
+            this.現在高度m.AutoSize = true;
+            this.現在高度m.Location = new System.Drawing.Point(177, 172);
+            this.現在高度m.Name = "現在高度m";
+            this.現在高度m.Size = new System.Drawing.Size(14, 12);
+            this.現在高度m.TabIndex = 12;
+            this.現在高度m.Text = "m";
             // 
-            // label9
+            // 現在落下速度ms
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(177, 201);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(26, 12);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "m/s";
+            this.現在落下速度ms.AutoSize = true;
+            this.現在落下速度ms.Location = new System.Drawing.Point(177, 201);
+            this.現在落下速度ms.Name = "現在落下速度ms";
+            this.現在落下速度ms.Size = new System.Drawing.Size(26, 12);
+            this.現在落下速度ms.TabIndex = 13;
+            this.現在落下速度ms.Text = "m/s";
             // 
-            // label10
+            // 残推進剤単位
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(177, 230);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 12);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "単位";
+            this.残推進剤単位.AutoSize = true;
+            this.残推進剤単位.Location = new System.Drawing.Point(177, 230);
+            this.残推進剤単位.Name = "残推進剤単位";
+            this.残推進剤単位.Size = new System.Drawing.Size(29, 12);
+            this.残推進剤単位.TabIndex = 14;
+            this.残推進剤単位.Text = "単位";
             // 
             // StartButton
             // 
@@ -259,21 +259,21 @@
             this.Controls.Add(this.NonInjectionButton);
             this.Controls.Add(this.InjectionButton);
             this.Controls.Add(this.StartButton);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.残推進剤単位);
+            this.Controls.Add(this.現在落下速度ms);
+            this.Controls.Add(this.現在高度m);
+            this.Controls.Add(this.使用推進剤単位);
+            this.Controls.Add(this.初期高度m);
             this.Controls.Add(this.RemainingPropellant);
             this.Controls.Add(this.NowVelocity);
             this.Controls.Add(this.NowAltitude);
             this.Controls.Add(this.UsePropellant);
             this.Controls.Add(this.InitialAltitude);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.残推進剤);
+            this.Controls.Add(this.現在落下速度);
+            this.Controls.Add(this.現在高度);
+            this.Controls.Add(this.噴射推進剤);
+            this.Controls.Add(this.初期高度);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MoonLanding";
             this.Text = "月面着陸";
@@ -286,21 +286,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label 初期高度;
+        private System.Windows.Forms.Label 噴射推進剤;
+        private System.Windows.Forms.Label 現在高度;
+        private System.Windows.Forms.Label 現在落下速度;
+        private System.Windows.Forms.Label 残推進剤;
         private System.Windows.Forms.NumericUpDown InitialAltitude;
         private System.Windows.Forms.NumericUpDown UsePropellant;
         private System.Windows.Forms.TextBox NowAltitude;
         private System.Windows.Forms.TextBox NowVelocity;
         private System.Windows.Forms.TextBox RemainingPropellant;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label 初期高度m;
+        private System.Windows.Forms.Label 使用推進剤単位;
+        private System.Windows.Forms.Label 現在高度m;
+        private System.Windows.Forms.Label 現在落下速度ms;
+        private System.Windows.Forms.Label 残推進剤単位;
         private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Button InjectionButton;
         private System.Windows.Forms.Button NonInjectionButton;
